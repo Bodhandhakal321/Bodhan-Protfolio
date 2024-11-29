@@ -30,12 +30,10 @@ const Project = () => {
           animate="visible"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
         >
-          {Array(3)
-            .fill('')
-            .map((_, index) => (
+          
               <motion.div
-                key={index}
-                variants={container(0.4 + index * 0.2)}
+               
+                variants={container(0.4 +  0.2)}
                 initial="hidden"
                 animate="visible"
                 className="p-4 border rounded-lg border-neutral-900 flex flex-col items-center"
@@ -48,14 +46,36 @@ const Project = () => {
                 />
                 <a
                   className="mt-3 bg-cyan-700 text-white p-2 rounded-lg font-barlow"
-                  href=""
+                  href="https://github.com/Bodhandhakal321/Basic-react/tree/main/06currencyChanger"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   View More
                 </a>
               </motion.div>
-            ))}
+              <motion.div
+               
+                variants={container(0.4 +  0.2)}
+                initial="hidden"
+                animate="visible"
+                className="p-4 border rounded-lg border-neutral-900 flex flex-col items-center"
+              >
+                <h3 className="text-lg font-semibold mb-2">Hamro Nibas</h3>
+                <img
+                  className="h-52 w-auto"
+                  src={currency}
+                  alt="Hamro Nibas"
+                />
+                <a
+                  className="mt-3 bg-cyan-700 text-white p-2 rounded-lg font-barlow"
+                  href="https://github.com/sthasaroj13/HamroNibas_Client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View More
+                </a>
+              </motion.div>
+           
         </motion.div>
       </div>
       <motion.div
