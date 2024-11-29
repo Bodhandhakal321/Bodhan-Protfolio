@@ -4,6 +4,8 @@ import {SiMongodb} from "react-icons/si"
 // import {RiReactjsLine} from "react-icons/ri"
 import {FaNodeJs} from "react-icons/fa"
 import { animate, motion } from 'framer-motion'
+import { FaHtml5, FaP } from "react-icons/fa6";
+import { FaPhp } from "react-icons/fa";
 
 const iconChanges = (duration) =>({
     initials:{y:-10},
@@ -54,7 +56,14 @@ const Technologies = () => {
         initials="initials"
         animate="animate"
         className='rounded-2xl border-4 border-neutral-900'>
-            <RiReactjsLine className='text-7xl ' />
+            <FaHtml5 className='text-7xl  text-red-600' />
+        </motion.div>
+        <motion.div 
+        variants={iconChanges(4)}
+        initials="initials"
+        animate="animate"
+        className='rounded-2xl border-4 border-neutral-900'>
+            <FaPhp className='text-7xl  ' />
         </motion.div>
     </motion.div>
     
